@@ -1,30 +1,29 @@
 //Maya ASCII 2026 scene
-//Name: Maya project.ma
-//Last modified: Wed, Sep 02, 2026 12:43:24 PM
+//Name: Maya project.0001.ma
+//Last modified: Wed, Sep 02, 2026 12:44:05 PM
 //Codeset: 1252
 requires maya "2026";
 requires "stereoCamera" "10.0";
 requires "mtoa" "5.5.4.2";
-requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "E7A2B3D5-4FF7-E135-6B09-A4A5574ABD4D";
+fileInfo "UUID" "86214169-4E01-7D41-2460-E6B6FF2A5162";
 createNode transform -s -n "persp";
 	rename -uid "38DBC622-46F9-8378-D36C-1FAF3CC4292F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.3127878863664826 1.6105569186110549 6.2064469827880373 ;
-	setAttr ".r" -type "double3" 0.59999999999998821 45.199999999997971 -3.5263805102815876e-17 ;
+	setAttr ".t" -type "double3" 1.3173146036707251 5.218250146972677 4.2970732063747406 ;
+	setAttr ".r" -type "double3" -31.200000000000049 23.199999999998006 8.6509422106450582e-16 ;
 	setAttr ".rpt" -type "double3" 1.935149246119949e-15 7.9904515355839488e-16 1.9996824895167672e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "728DCAC7-496C-4225-8DC0-A39666C1F12A";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 8.8308144878477357;
+	setAttr ".coi" 6.7571038275748094;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -7089,20 +7088,20 @@ createNode mesh -n "polySurfaceShape1" -p "pasted__pCube1";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E508A057-40FE-0232-107C-6BB695C2CD96";
+	rename -uid "61930EE8-4FEF-5158-A3D7-5A860500645E";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "282C4969-4D2B-B033-7002-329863BC5EFF";
+	rename -uid "97B5F1B6-48E3-EDF8-1B83-E3B77857C0A8";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4957E68C-46C3-0D87-059A-8589E16AB298";
+	rename -uid "FF171DD9-4127-35A5-D6F2-64955D67481A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3B5406C1-436C-430F-ADDC-F5B8B21043B6";
+	rename -uid "1488FB9B-4810-EC3B-FA8C-818F8F335744";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "3161A5A3-44F4-68D0-C165-D788E34B66B6";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "EB6C0ED6-4598-3408-1617-FFB7E4EDD93A";
+	rename -uid "3FB8E72E-4D46-92C8-608E-F1BE7EC842CB";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "3A25594E-4D8F-BFAF-5C44-B3826AE4DBD2";
 	setAttr ".g" yes;
@@ -7346,4 +7345,4 @@ connectAttr "BigFish:standardSurface2.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pasted__pCube1Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
-// End of Maya project.ma
+// End of Maya project.0001.ma
